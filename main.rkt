@@ -31,6 +31,6 @@
                        bytes?
                        #:external-port exact-integer?)
                       ()
-                      (values string? port?))
+                      boolean?)
                  ((priv-key ext-port)())
                  @{Instructs SAGIRI to stop forward incoming requests on @racket[ext-port].}))

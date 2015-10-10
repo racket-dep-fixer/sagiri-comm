@@ -26,7 +26,7 @@
      (match (ctl-response-read in)
        [(ctl-response (? (curry = .ctlRespOKAY))
                       name)
-        name]
+        (values name ext-port)]
        [(ctl-response _ message)
         (error 'sagiri-start-forward message)]))
    (lambda()
