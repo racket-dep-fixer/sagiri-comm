@@ -1,9 +1,11 @@
 #lang scribble/manual
-@(require scribble/extract)
+@(require scribble/extract
+          (for-label racket
+                     "../main.rkt"))
 @title{SAGIRI Racket bindings}
 @defmodule[sagiri-comm]
 
-@para{@racket{sagiri-comm} provides a convenient Racket interface to SAGIRI. It works by
+@para{@racket[sagiri-comm] provides a convenient Racket interface to SAGIRI. It works by
  talking with a running SAGIRI instance on the local machine, so make sure that
  SAGIRI is running before calling the procedures exported by this module.}
 

@@ -4,7 +4,11 @@
          "connect.rkt"
          scribble/srcdoc
          racket/contract
-         (for-doc racket/base scribble/base scribble/manual))
+         (for-doc racket/base scribble/base scribble/manual
+                  (for-label racket/base
+                             sagiri-comm)))
+
+(generate-delayed-documents)
 
 (provide
  (proc-doc/names sagiri-connect
